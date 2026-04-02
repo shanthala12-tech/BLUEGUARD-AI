@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BlueGuard AI</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+
+<body>
+
+<h1 class="title">🌊 BlueGuard AI Dashboard</h1>
+
+<div class="container">
+
+    <div class="card" onclick="openDetails('pollution')">
+        <h2>Pollution Status</h2>
+        <p id="pollution">Loading...</p>
+    </div>
+
+    <div class="card" onclick="openDetails('biodiversity')">
+        <h2>Biodiversity Health</h2>
+        <p id="biodiversity">Loading...</p>
+    </div>
+
+    <div class="card" onclick="openDetails('fishing')">
+        <h2>Fishing Alert</h2>
+        <p id="fishing">Loading...</p>
+    </div>
+
+    <div class="card">
+        <h2>🧠 AI Prediction</h2>
+        <p id="prediction">Analyzing...</p>
+    </div>
+
+    <div class="card" id="alertBox">
+        <h2>🚨 Alerts</h2>
+        <p id="alertText">No alerts</p>
+    </div>
+
+    <div class="card">
+        <h2>💡 Suggested Action</h2>
+        <p id="solution">Analyzing...</p>
+    </div>
+
+    <div class="card">
+        <h2>🌊 Ocean Mood</h2>
+        <p id="mood">Analyzing...</p>
+    </div>
+
+</div>
+
+<h2>🌍 Ocean Monitoring Map</h2>
+<div id="map"></div>
+
+<h2>📊 Pollution Trend</h2>
+<canvas id="chart"></canvas>
+
+<h2>⏱ Live Monitoring Time</h2>
+<p id="time" style="font-size:20px; font-weight:bold;"></p>
+
+<button class="btn" onclick="generateData()">🔄 Refresh Data</button>
+<button class="btn" onclick="speakData()">🔊 Speak Status</button>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+

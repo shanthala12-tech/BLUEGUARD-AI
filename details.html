@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Details</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #0f2027;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .box {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>🌊 Detailed Analysis</h1>
+
+<div class="box">
+    <h2 id="title"></h2>
+    <p id="info"></p>
+</div>
+
+<script>
+    let type = localStorage.getItem("type");
+
+    let title = "";
+    let info = "";
+
+    if (type === "pollution") {
+        title = "Pollution Details";
+        info = "Ocean pollution is caused by plastic waste, chemicals, and oil spills. It affects marine life and human health.";
+    }
+
+    if (type === "biodiversity") {
+        title = "Biodiversity Details";
+        info = "Marine biodiversity is decreasing due to pollution, climate change, and habitat destruction.";
+    }
+
+    if (type === "fishing") {
+        title = "Fishing Details";
+        info = "Overfishing reduces fish population and damages ocean ecosystems.";
+    }
+
+    document.getElementById("title").innerText = title;
+    document.getElementById("info").innerText = info;
+</script>
+
+</body>
+</html>
+

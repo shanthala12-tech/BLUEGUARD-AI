@@ -1,0 +1,105 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+/* Title */
+.title {
+    padding: 20px;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+/* Grid Layout */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+/* Cards */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    min-height: 140px;
+
+    /* Premium Border */
+    border: 1px solid rgba(255,255,255,0.2);
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0,255,255,0.7);
+}
+
+/* Text */
+.card p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 🌍 MAP (NOW WITH BORDER) */
+#map {
+    height: 300px;
+    width: 75%;
+    margin: 20px auto;
+    border-radius: 15px;
+
+    /* 🔥 ADDED BORDER */
+    border: 2px solid rgba(255,255,255,0.3);
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* 📊 GRAPH (NOW WITH BORDER) */
+canvas {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px auto;
+    width: 75% !important;
+    height: 250px !important;
+
+    /* 🔥 ADDED BORDER */
+    border: 2px solid rgba(255,255,255,0.3);
+
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+/* Button */
+.btn {
+    margin: 10px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: cyan;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button hover */
+.btn:hover {
+    background: #00bcd4;
+    transform: scale(1.1);
+}
+
+/* Headings */
+h2 {
+    margin-top: 20px;
+}
+
+
